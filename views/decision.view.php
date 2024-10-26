@@ -132,7 +132,7 @@
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej7']; ?></h6>
             </div>
             <div class="card-body">
-                <p><?php echo $data["mensaje"];?></p>
+                <p><?php echo isset($data["mensaje"]) ? $data["mensaje"] : "No ha llegado nada en el get";?></p>
             </div>
         </div>
     </div>

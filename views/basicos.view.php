@@ -8,10 +8,10 @@
 
 <div class="row">
 
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
-                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej1']; ?></h6>
             </div>
             <div class="card-body">
@@ -19,145 +19,123 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
-                class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej2']; ?></h6>
             </div>
             <div class="card-body">
-                El precio hora es <?php echo $data['ej2_precio_hora']; ?>, se han trabajado <?php echo $data['ej2_horas_trabajadas']; ?> horas por lo que se pagarán <?php echo $data['ej2_resultado']; ?> €.
+                El precio hora es <?php echo $data['precio_hora_ej2']; ?>€, se han trabajado <?php echo $data['numero_horas_ej2']; ?> horas por lo que se pagarán <?php echo $data['total_ej2']; ?>€
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej3']; ?></h6>
             </div>
             <div class="card-body">
-                La base es <?php echo $data['ej3_base']; ?> y la altura es <?php echo $data['ej3_altura']; ?>, su área es <?php echo $data['ej3_area']; ?>.
+                <div class="row">
+                    <div class="col-12">Área del rectańgulo: <?php echo $data['area_ej3']; ?></div>
+                    <div class="col-12">Perímetro del rectángulo: <?php echo $data['perimetro_ej3']; ?></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej4']; ?></h6>
             </div>
             <div class="card-body">
-                El nombre del alumno es <?php echo $data['ej4_nombre']; ?> tiene <?php echo $data['ej4_edad']; ?> años y su nota media es un <?php echo $data['ej4_nota_media']; ?>.
+                <div class="row">
+                    <div class="col-6">Alumna/o: <?php echo $data['nombre']; ?></div>
+                    <div class="col-6">Edad: <?php echo $data['edad']; ?></div>
+                    <div class="col-12">Nota media: <?php echo $data['nota_media']; ?></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej5']; ?></h6>
             </div>
             <div class="card-body">
-                <p>Precio por noche en temporada baja: <?php echo $data['ej5_precio_noche_temp_baja']; ?>.</p>
-                <p>Precio por noche temporada alta es de <?php echo $data['ej5_precio_noche_temp_alta']; ?>.</p>
-                <p>Número de noches temporada baja: <?php echo $data['ej5_noches_temp_baja']; ?>.</p>
-                <p>Número de noches temporada alta: <?php echo $data['ej5_noches_temp_alta']; ?>.</p>
-                <p>Precio total: <?php echo $data['ej5_total']; ?>.</p>
-
+                <div class="row">
+                    <div class="col-6">Precio noche alta: <?php echo $data['precion_alta']; ?>€</div>
+                    <div class="col-6">Precio noche baja: <?php echo $data['precion_baja']; ?>€</div>
+                    <div class="col-6">Noches alta: <?php echo $data['noches_alta']; ?></div>
+                    <div class="col-6">Noches baja: <?php echo $data['noches_baja']; ?></div>
+                    <div class="col-12">Total: <?php echo $data['total_ej5']; ?>€</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej6']; ?></h6>
             </div>
             <div class="card-body">
-                <p>Radio: <?php echo $data['ej6_radio']; ?>.</p>
-                <p>Área: <?php echo number_format($data['ej6_area'], decimals: 2, decimal_separator: ',', thousands_separator: ','); ?>.</p>
-                <p>Perímetro: <?php echo number_format($data['ej6_perimetro'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?>.</p>
-
+                <div class="row">
+                    <div class="col-12">Área del círculo: <?php echo number_format(num: $data['area_ej6'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?></div>
+                    <div class="col-12">Perímetro del círculo: <?php echo number_format(num: $data['perimetro_ej6'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej7']; ?></h6>
             </div>
             <div class="card-body">
-                <p>Kilómetros/hora: <?php echo $data['ej7_kilometros_hora']; ?>.</p>
-                <p>Metros/segundos: <?php echo number_format($data['ej7_metros_segundo'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?>.</p>
-
+                <div class="row">
+                    <div class="col-6">Km/h: <?php echo number_format(num: $data['kmh'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?></div>
+                    <div class="col-6">m/s: <?php echo number_format(num: $data['ms'], decimals: 2, decimal_separator: ',', thousands_separator: '.'); ?></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej8']; ?></h6>
             </div>
             <div class="card-body">
-                <p>Número: <?php echo $data['ej8_numero']; ?>.</p>
-                <p>Centenas: <?php echo intval($data['ej8_centenas']); ?>.</p>
-                <p>Decenas: <?php echo intval($data['ej8_decenas']); ?>.</p>
-                <p>Unidades: <?php echo intval($data['ej8_unidades']); ?>.</p>
-
+                <div class="row">
+                    <div class="col-12">Número: <?php echo $data['num_ej8'];?></div>
+                    <div class="col-4">Centenas: <?php echo $data['centena']; ?>€</div>
+                    <div class="col-4">Decenas: <?php echo $data['decena']; ?>€</div>
+                    <div class="col-4">Unidades: <?php echo $data['unidades']; ?></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-
-    <div class="col-12">
+    <div class="col-6">
         <div class="card shadow mb-4">
             <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary"><?php echo $data['div_titulo_ej9']; ?></h6>
             </div>
             <div class="card-body">
-                <p>Cadena: <?php echo $data['ej9_cadena']; ?>.</p>
-                <p>Caracteres: <?php echo $data['ej9_caracteres']; ?>.</p>
-                <p>Palabras: <?php echo $data['ej9_palabras']; ?>.</p>
-
+                <p>La cadena de texto '<?php echo $data['texto']; ?>' está formada por <?php echo $data['caracteres']; ?> caracteres y <?php echo $data['palabras']; ?> palabras</p>
             </div>
         </div>
     </div>
 </div>
-
-
-
-

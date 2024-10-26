@@ -130,8 +130,8 @@ function getColor(string $nota)
 }
 
 //Ejercicio7
-if(isset($_GET["bebida"])) {
     $data["div_titulo_ej7"] = "Ejercicio 7";
+if(isset($_GET["bebida"])) {
     $data["bebida"] = $_GET["bebida"];
     $data["mensaje"] = comprobarBebida($data["bebida"]);
 }
